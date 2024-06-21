@@ -1,0 +1,283 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body {
+  background-color: #7e8499;
+  margin: 0px;
+  padding: 0% 4% 0% 4%;
+}
+
+header {
+  background-color: black;
+  padding: 10px 10px;
+  box-shadow: 2px 2px 10px 2px black;
+  border-radius: 0px 0px 27px 27px;
+}
+.loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  display: grid;
+  place-items: center;
+  z-index: 9999;
+}
+
+.loader {
+  width: 150px;
+  height: 150px;
+  animation: spin 1s linear infinite;
+  border-radius: 50%;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader-wrapper.hidden {
+  display: none;
+}
+.nav {
+  width: calc(100% - 0px);
+  text-align: right;
+}
+.logo {
+  width: 150px;
+  border: solid 1px black;
+  border-radius: 10px;
+  box-shadow: 0.5px 0px 7px 0.5px white;
+  margin-left: 60px;
+  margin-top: 15px;
+  display: inline-block;
+}
+.nav-items {
+  list-style-type: none;
+  display: inline;
+  margin: 0px;
+  padding: 0px;
+}
+.nav-item {
+  display: inline-block;
+  margin: 0px 30px 0px 30px;
+}
+.nav-item a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 4px;
+}
+.nav-item a:hover {
+  background-color: white;
+  border-radius: 20px;
+  color: #161a30;
+  transition: 0.4s;
+}
+/*
+  dropdown menü
+  */
+.dropbtn {
+  cursor: pointer;
+}
+#dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 150px;
+  border-radius: 5px;
+  top: 40px;
+  z-index: 11;
+}
+.dropdown-content a {
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+}
+.dropdown-content a:hover {
+  background-color: white;
+}
+#dropdown:hover .dropdown-content {
+  display: block;
+}
+.iletisim-items {
+  font-size: 32px;
+  display: inline;
+  float: right;
+}
+.iletisim-items a {
+  text-decoration: none;
+}
+.iletisim-item {
+  padding-left: 8px;
+  opacity: 0.2;
+  color: white;
+}
+#githup:hover {
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+  opacity: 1;
+}
+#linkedin:hover {
+  color: #006192;
+  cursor: pointer;
+  transition: 0.2s;
+  opacity: 1;
+}
+#instagram:hover {
+  color: #dd2a7b;
+  cursor: pointer;
+  transition: 0.2s;
+  opacity: 1;
+}
+#twitter:hover {
+  color: #55acee;
+  cursor: pointer;
+  transition: 0.2s;
+  opacity: 1;
+}
+/*main*/
+.center {
+  text-align: center;
+  font-size: 25px;
+  font-family: fantasy;
+}
+.main-cards {
+  padding: 0px;
+  width: 100%;
+}
+.main-cards h3 {
+  font-weight: bold;
+  padding: 0px;
+  margin: 0px;
+}
+.card-properties-items {
+  list-style-type: none;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.card-properties-items-2 {
+  list-style-type: none;
+  float: right;
+  margin-left: 0px;
+}
+.card-properties-item {
+  margin: 23px;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: cursive;
+}
+.ozellik:hover {
+  border-bottom: dotted 3px black;
+}
+.main-card-img {
+  width: 270px;
+  float: left;
+  overflow: auto;
+}
+.main-card {
+  background-color: white;
+  border: solid 1px black;
+  margin: 20px;
+  margin-top: 30px;
+  border-radius: 10px;
+  height: 350px;
+  padding: 8px;
+  list-style-type: none;
+}
+.marka-ad {
+  font-size: 35px;
+  position: sticky;
+  top: 114px;
+  background-color: white;
+  border-radius: 0px 0px 5px 5px;
+}
+.cihazlar {
+  background-color: white;
+  border-radius: 30px 30px 30px 30px;
+  padding: 5px;
+  margin-top: 30px;
+}
+.cihazlar:hover {
+  box-shadow: 3px 3px 30px 2px black;
+  background: linear-gradient(to bottom, #ffffff 10%, #9a9a9a 100%);
+  transition: 0.9s;
+  border-radius: 0px 40px 40px 40px;
+}
+.apple-card:hover {
+  background: linear-gradient(to right, #ffffff 15%, #9a9a9a 80%);
+  box-shadow: 3px 3px 30px 3px black;
+  transition: 0.9s;
+  border-radius: 0px 30px 30px 30px;
+}
+.right {
+  margin-left: 300px;
+}
+.menu-items {
+  width: 100%;
+  position: sticky;
+  top: 0px;
+  background: linear-gradient(to right, #ffffff 10%, #777777 100%);
+  z-index: 10;
+}
+#tel-icon {
+  background-image: url(image/smartphone-call.png);
+}
+#tablet-icon {
+  background-image: url(image/tablet.png);
+}
+#pc-icon {
+  background-image: url(image/laptop.png);
+}
+.menu-item {
+  display: block;
+  margin: 10px 50px 10px 50px;
+  height: 90px;
+  width: 90px;
+  float: right;
+  background-size: 70px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.menu-item:hover {
+  background-position-y: 0px;
+  background-position-x: 10 px;
+}
+.menu-item a {
+  color: white;
+  text-decoration: none;
+}
+#marka-ad {
+  font-size: 100px;
+  color: black;
+  text-align: left;
+  font-family: "Times New Roman", Times, serif;
+}
+.footer {
+  background-color: black;
+  padding: 5px;
+  padding-bottom: 10px;
+  color: white;
+  margin: 0px;
+  margin-top: 10px;
+  border-radius: 30px 30px 0px 0px;
+  text-align: center;
+  font-weight: bold;
+}

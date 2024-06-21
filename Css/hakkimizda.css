@@ -1,0 +1,235 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+*::selection {
+  background-color: cornflowerblue;
+}
+body {
+  background-color: #7e8499;
+  margin: 0px;
+  padding: 0% 4% 0% 4%;
+}
+
+header {
+  background-color: black;
+  padding: 10px 10px;
+  box-shadow: 2px 2px 10px 2px black;
+  border-radius: 0px 0px 27px 27px;
+}
+.loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  display: grid;
+  place-items: center;
+  z-index: 9999;
+}
+
+.loader {
+  width: 150px;
+  height: 150px;
+  animation: spin 1s linear infinite;
+  border-radius: 50%;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader-wrapper.hidden {
+  display: none;
+}
+.nav {
+  width: calc(100% - 0px);
+  text-align: right;
+}
+.logo {
+  width: 150px;
+  border: solid 1px black;
+  border-radius: 10px;
+  box-shadow: 0.5px 0px 7px 0.5px white;
+  margin-left: 60px;
+  margin-top: 15px;
+  display: inline-block;
+}
+.nav-items {
+  list-style-type: none;
+  display: inline;
+  margin: 0px;
+  padding: 0px;
+}
+.nav-item {
+  display: inline-block;
+  margin: 0px 30px 0px 30px;
+}
+.nav-item a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 4px;
+}
+.nav-item a:hover {
+  background-color: white;
+  border-radius: 20px;
+  color: #161a30;
+  transition: 0.4s;
+}
+/*
+  dropdown menü
+  */
+.dropbtn {
+  cursor: pointer;
+}
+#dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 150px;
+  border-radius: 5px;
+  top: 40px;
+  z-index: 11;
+}
+.dropdown-content a {
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+}
+.dropdown-content a:hover {
+  background-color: white;
+}
+#dropdown:hover .dropdown-content {
+  display: block;
+}
+.iletisim-items {
+  font-size: 32px;
+  display: inline;
+  float: right;
+}
+.iletisim-items a {
+  text-decoration: none;
+}
+.iletisim-item {
+  padding-left: 8px;
+  opacity: 0.2;
+  color: white;
+}
+#githup:hover {
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+  opacity: 1;
+}
+#linkedin:hover {
+  color: #006192;
+  cursor: pointer;
+  transition: 0.2s;
+  opacity: 1;
+}
+#instagram:hover {
+  color: #dd2a7b;
+  cursor: pointer;
+  transition: 0.2s;
+  opacity: 1;
+}
+#twitter:hover {
+  color: #55acee;
+  cursor: pointer;
+  transition: 0.2s;
+  opacity: 1;
+}
+.footer {
+  background-color: black;
+  padding: 5px;
+  padding-bottom: 10px;
+  color: white;
+  margin: 0px;
+  margin-top: 10px;
+  border-radius: 30px 30px 0px 0px;
+  text-align: center;
+  font-weight: bold;
+}
+.baslik {
+  font-size: 30px;
+  text-align: center;
+  margin: 0px;
+}
+.icerik {
+  font-size: 18px;
+  text-align: center;
+  margin: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#biz_kimiz {
+  background-color: whitesmoke;
+  border-radius: 20px;
+  border: solid 2px black;
+  border-left: solid 25px black;
+  padding: 20px;
+  margin: 20px;
+}
+#biz_kimiz:hover {
+  border-left: solid 70px black;
+  padding-bottom: 70px;
+  transition: 0.9s;
+}
+#misyon {
+  background-color: whitesmoke;
+  border-radius: 20px;
+  border: solid 2px black;
+  border-right: solid 25px black;
+  padding: 20px;
+  margin: 20px;
+}
+#misyon:hover {
+  border-right: solid 70px black;
+  padding-bottom: 70px;
+  transition: 0.9s;
+}
+#vizyon {
+  background-color: whitesmoke;
+  border-radius: 20px;
+  border: solid 2px black;
+  border-left: solid 25px black;
+  padding: 20px;
+  margin: 20px;
+}
+#vizyon:hover {
+  border-left: solid 70px black;
+  padding-bottom: 70px;
+  transition: 0.9s;
+}
+#neden_biz {
+  background-color: whitesmoke;
+  border-radius: 20px;
+  border: solid 2px black;
+  border-right: solid 25px black;
+  padding: 20px;
+  margin: 20px;
+}
+#neden_biz:hover {
+  border-right: solid 70px black;
+  padding-bottom: 70px;
+  transition: 0.9s;
+}
